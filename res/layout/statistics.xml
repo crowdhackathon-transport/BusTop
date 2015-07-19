@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/busstopback" >
+
+    <ImageButton
+        android:id="@+id/imageButtonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonStop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imageButtonStop"
+        android:layout_toRightOf="@+id/imageButtonStop"
+        android:src="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButtonMap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ImageButtonMap"
+        android:layout_toRightOf="@+id/ImageButtonMap"
+        android:src="@drawable/statistics" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButtonMap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ImageButtonStatistics"
+        android:layout_toRightOf="@+id/ImageButtonStatistics"
+        android:src="@drawable/ticket" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/time" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/co2" />
+    
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/points" />
+
+    <TextView
+        android:id="@+id/estimatedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="25dp" />
+    
+    <TextView
+        android:id="@+id/moneySaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:textSize="25dp" />  
+        
+    <TextView
+        android:id="@+id/co2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:textSize="25dp" /> 
+        
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toRightOf="@+id/imageView5"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/total"
+        android:src="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_marginLeft="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:src="@drawable/co2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_marginLeft="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:src="@drawable/points" />
+
+    <TextView
+        android:id="@+id/totalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:textSize="20dp"
+        android:text="23.4"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/totalCo2"
+        android:layout_marginLeft="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalMoney"
+        android:layout_alignBottom="@+id/totalMoney"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_toRightOf="@+id/totalMoney"
+        android:textSize="20dp"
+        android:text="10.3g"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/totalPoints"
+        android:layout_marginLeft="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalCo2"
+        android:layout_alignBottom="@+id/totalCo2"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_toRightOf="@+id/totalCo2"
+        android:textSize="20dp"
+        android:text="1033"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="27dp"
+        android:text="~~~~~      Total      ~~~~~"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

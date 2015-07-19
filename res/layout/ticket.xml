@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <ImageButton
+        android:id="@+id/imageButtonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonStop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imageButtonStop"
+        android:layout_toRightOf="@+id/imageButtonStop"
+        android:src="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButtonMap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ImageButtonMap"
+        android:layout_toRightOf="@+id/ImageButtonMap"
+        android:src="@drawable/statistics" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButtonMap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ImageButtonStatistics"
+        android:layout_toRightOf="@+id/ImageButtonStatistics"
+        android:src="@drawable/ticket" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonStop"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="24dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewAFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="24dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextAFM"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAFM"
+        android:layout_below="@+id/textViewAFM"
+        android:layout_marginTop="24dp"
+        android:layout_centerVertical="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonGetFreeTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAFM"
+        android:layout_centerVertical="true"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonGetFreeTicket"
+        android:layout_below="@+id/buttonGetFreeTicket"
+        android:layout_marginTop="30dp"
+        android:text="Check" />
+
+    <TextView
+        android:id="@+id/textViewValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCheck"
+        android:layout_alignBottom="@+id/buttonCheck"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonCheck"
+        android:layout_below="@+id/buttonCheck"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>
+    
+
+

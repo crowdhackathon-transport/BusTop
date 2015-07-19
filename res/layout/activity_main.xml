@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/busstopback"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hackathensteam.busstop.MainActivity" >
+    
+    <TextView
+        android:id="@+id/textView_select_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/hello_world" />
+
+    <Spinner
+        android:id="@+id/select_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_select_bus"
+        android:layout_marginTop="16dp" 
+        />
+    
+    <TextView
+        android:id="@+id/textView_select_ending_bus_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" 
+        android:layout_below="@+id/select_bus"
+        android:layout_marginTop="30dp"
+        />
+
+    <Spinner
+        android:id="@+id/select_ending_bus_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_select_ending_bus_stop"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/gobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_ending_bus_stop"
+        android:layout_below="@+id/select_ending_bus_stop"
+        android:layout_marginTop="20dp"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/imageButtonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonStop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imageButtonStop"
+        android:layout_toRightOf="@+id/imageButtonStop"
+        android:src="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButtonMap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ImageButtonMap"
+        android:layout_toRightOf="@+id/ImageButtonMap"
+        android:src="@drawable/statistics" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButtonMap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ImageButtonStatistics"
+        android:layout_toRightOf="@+id/ImageButtonStatistics"
+        android:src="@drawable/ticket" />
+
+	</RelativeLayout>
